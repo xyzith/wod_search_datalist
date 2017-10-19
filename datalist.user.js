@@ -4,7 +4,7 @@
 // @updateURL       https://bitbucket.org/Xyzith/wod_search_datalist/raw/sync/datalist.user.js
 // @grant           none
 // @author          Taylor Tang
-// @version         1.0
+// @version         1.1
 // @description     Replace search form select with datalist
 // @include         *://*.world-of-dungeons.org/wod/spiel/hero/items.php*
 // @include         *://*.world-of-dungeons.org/wod/spiel/trade/trade.php*
