@@ -4,7 +4,7 @@
 // @updateURL       https://bitbucket.org/Xyzith/wod_search_datalist/raw/sync/datalist.user.js
 // @grant           none
 // @author          Taylor Tang
-// @version         1.2
+// @version         1.3
 // @description     Replace search form select with datalist
 // @include         *://*.world-of-dungeons.org/wod/spiel/hero/items.php*
 // @include         *://*.world-of-dungeons.org/wod/spiel/trade/trade.php*
@@ -18,7 +18,6 @@
         var overlay = input.nextSibling;
         var list = overlay.nextSibling;
         var selected = list.querySelector('[value="' + input.value + '"]');
-        console.log(list);
         if(selected) {
             overlay.textContent = selected.textContent;
         } else {
@@ -75,7 +74,6 @@
             updateOverlay(e.target);
         });
         input.addEventListener('change', function(e) {
-            console.log('change');
             var value = e.target.value;
             var list = e.target.nextSibling.nextSibling;
             for(let el of list.options) {
